@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.store{
+    margin: auto;
+    width: 60%;
+    min-height: 100%;
+
+}
+
+h1{
+    font-size:60px ;
+    text-align: center;
+    padding: 30px;
+    color: purple;
+   font-style: italic;
+}
+
+.shoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    border-radius: 15px;
+    width: 30%;
+    min-height: 400px;
+    padding: 5px;
+    box-shadow: 7px 7px 30px rgb(209, 205, 205);
+    margin-bottom: 40px;
+}
+
+/* .card div:nth-child(1) img{
+    width:100% ;
+} */
+
+.image{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.image img{
+    border-radius: 15px;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.image img:hover{
+    scale: 1.2;
+    transition: 0.4s all ease-in;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 10px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+
+   
+}
+
+.op{
+    opacity: 0.5;
+}
+
+.cart >img{
+    width:45px;
+}
+
+.description p:nth-child(4)::before {
+    content: "\20B9"; /* Unicode for ₹ */
+    margin-right: 4px;
+}
